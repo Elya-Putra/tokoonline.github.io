@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:wght@200;300;500;800&family=Righteous&family=Roboto&family=Rubik+Distressed&family=Source+Sans+Pro:wght@300;400&family=Source+Serif+Pro:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  transition: all 0.2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f19800;
+}
+.slide-container {
+  max-width: 1250px;
+  width: 100%;
+  background-color: rgba(255, 249, 168, 0.7);
+  padding: 40px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.slide-container h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 7px 4px rgba(0, 0, 0, 0.7);
+}
+.slide-container .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.slide-container .slide-content .card-wrapper .card {
+  border-radius: 25px;
+  background-color: #fff9a8;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.slide-container .slide-content .card-wrapper .card .image-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+.slide-container .slide-content .card-wrapper .card video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide-container .slide-content .card-wrapper .card .image-content .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f19800;
+  border-radius: 25px;
+}
+.slide-container .slide-content .card-wrapper .card .image-content .card-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff9a8;
+  padding: 3px;
+}
+.slide-container .slide-content .card-wrapper .card .image-content .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f19800;
+}
+.slide-container .slide-content .card-wrapper .card .card-content {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-container .slide-content .card-wrapper .card .card-content h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.slide-container .slide-content .card-wrapper .card .card-content p {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.slide-container .slide-content .card-wrapper .card .card-content button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #f19800;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+}
+.slide-container .swiper-button-next,
+.slide-container .swiper-button-prev {
+  color: #f19800;
+}
+.slide-container .custom-pagination {
+  color: #f19800;
+}
